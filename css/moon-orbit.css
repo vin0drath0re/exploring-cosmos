@@ -1,0 +1,162 @@
+.earth {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #8282FF;
+    transform: rotate(32deg);
+    z-index: 0;
+}
+
+.orbitSystem {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    right: -180px;
+    bottom: -100px;
+
+}
+
+
+.moon {
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    top: calc(50% - 88px);
+    left: -88px;
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    z-index: 0;
+    transform: rotate3d(-1, 0, 0, 32deg);
+    transform-style: preserve-3d;
+    animation-name: revolve;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+
+}
+
+.moon > img{
+
+    position: relative;
+    top: -16px;
+    left: -16px;
+    width: 200px;
+    height: 200px;
+
+
+
+
+
+}
+
+.moonOrbit{
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    top: -600px;
+    left: -600px;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+
+    
+    /* transform: rotate3d(1, 0, 0, 90deg); */
+    rotate: 32deg;
+    transform-style:preserve-3d;
+    animation-name: revolve;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+
+}
+
+.moonOrbitShowfront{
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    border-radius: 50%;
+    
+    /* border-left: 3px solid red;
+    border-right: 3px solid red;
+    border-bottom: 10px solid red; */
+
+    
+    transform: rotate3d(1, 0, 0, 94.5deg);
+    rotate: 32deg;
+    transform-style:preserve-3d;
+    z-index: 1;
+    
+
+}
+.moonOrbitShowback{
+    width: 1200px;
+    height: 1200px;
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    border-radius: 50%;
+    
+    /* border-top: 10px solid red; */
+
+    
+    transform: rotate3d(1, 0, 0, 94.5deg);
+    rotate: 32deg;
+    transform-style:preserve-3d;
+    z-index: -2;
+    
+
+}
+
+
+
+
+
+
+
+@keyframes revolve {
+
+    0%
+    {
+        transform: rotate3d(0,1,0, 0deg);
+        z-index: -1;
+        
+    }
+
+
+    25%
+    {
+        transform: rotate3d(-0.05,1,0, 90deg);
+        z-index: -1;
+    }
+
+    50%
+    {
+        transform: rotate3d(0,1,0, 180deg);
+        z-index: -1;
+       
+    }
+
+   
+
+
+    
+    75%{
+
+        transform: rotate3d(0.05,1,0, 270deg);
+        z-index: 3;
+
+        
+    }
+    100%{
+
+        transform: rotate3d(0,1,0, 360deg);
+        
+
+        
+    }
+    
+}

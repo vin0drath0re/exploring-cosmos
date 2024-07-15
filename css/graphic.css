@@ -1,0 +1,374 @@
+body {
+
+    margin: 0;
+    overflow-x: hidden;
+
+    background-color: black;
+}
+
+
+
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    user-select: none;
+    
+}
+
+
+#loading {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+#loading > span{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 50px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#layer1 {
+    background-image: url(svg1.svg);
+}
+
+
+
+
+
+.backBlur {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: inherit;
+    opacity: 0.4;
+    filter: blur(25px);
+    transition: 1s;
+    z-index: -1;
+
+
+
+}
+
+.foreBlur {
+
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: inherit;
+    opacity: 0.2;
+    filter: blur(25px);
+    z-index: 1;
+
+}
+
+
+
+
+.foreBlur:hover+.backBlur {
+    opacity: 1;
+    transition: 1s;
+
+}
+
+
+
+.Image {
+    position: absolute;
+    width: inherit;
+
+    /* display: none; */
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+}
+
+.saturn > .saturnImage{
+    z-index: -2;
+    
+}
+
+.saturn > .Image{
+    width: 1500px;
+    position: absolute;
+    left: -498px;
+    top: -119px;
+}
+
+
+
+.foreBlurImage {
+
+    opacity: 0.2;
+    filter: blur(25px);
+    
+    z-index: 3;
+
+}
+
+.backBlurImage {
+    opacity: 0.4;
+    filter: blur(25px);
+    z-index: -1;
+    transition: 1s;
+
+
+}
+
+
+
+
+.mars {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -90px;
+    top: -110px;
+    border-radius: 50%;
+
+    background-color: #F84600;
+    transform: rotate(151.8deg);
+    transition: 1s;
+
+
+}
+
+
+
+
+
+.saturn {
+    position: absolute;
+    width: 525px;
+    height: 500px;
+    left: 0px;
+    top: -400px;
+    border-radius: 50%;
+    
+    transform: rotate(-21deg);
+    background-color: rgb(254, 228, 116);
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+.saturnFrame,
+.earthFrame {
+    height: 100vh;
+    width: 100vw;
+    
+    position: relative;
+    
+
+}
+.marsFrame{
+    height: 200vw;
+    width: 100vw;
+}
+
+.earthFrame {
+    overflow: hidden;
+}
+
+.animationWrapper {
+
+    width: 100%;
+    height: 7000px;
+
+
+}
+
+.parallax-container {
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+   
+
+
+}
+
+.bg {
+
+    position: absolute;
+    width: 100%;
+    width: 100vw;
+    height: calc(500vh + 7000px);
+    top: 0;
+    z-index: -3;
+}
+
+.animation {
+
+    
+    height: 100vh;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+
+    overflow: hidden;
+
+
+}
+
+
+.rocket {
+
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+
+
+}
+
+
+
+
+
+
+.welcomeBack{
+    position: absolute;
+    bottom: calc(100vh - 171px);
+    left: 40px;
+
+    color: aliceblue;
+    
+
+    
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+
+    font-size: 40px;
+    
+
+}
+
+.welcomeBack > span{
+
+    font-size: 83px;
+    line-height: 62px;
+    font-weight: 900;
+
+
+
+
+
+}
+
+
+.btn {
+    all: unset;
+    background-color: #8282FF;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white;
+    overflow: hidden;
+    transition: 0.5s ease;
+
+}
+
+.icon {
+
+    fill: inherit;
+    position: absolute;
+    left: -2px;
+
+
+
+
+
+}
+
+.btn>span {
+
+    color: inherit;
+    position: absolute;
+    left: 105px;
+    top: 14%;
+    font-size: 28px;
+    white-space: nowrap;
+    
+    
+
+
+
+}
+
+
+
+
+
+.btn:hover {
+
+    background-color: white;
+    fill: #8282FF;
+    color: #8282FF;
+    width: 290px;
+    transition: 0.5s ease;
+
+
+
+
+
+}

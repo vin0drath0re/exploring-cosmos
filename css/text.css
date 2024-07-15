@@ -1,0 +1,118 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+.textFrame{
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+
+
+#heading{
+    position: relative;
+    
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 11px;
+    font-style: normal;
+    
+    font-size: 200px;
+    color: antiquewhite;
+    margin: auto;
+    border: 2px solid red;
+    width: 1000px;
+    text-align: center;
+
+}
+
+#heading > span{
+    
+    letter-spacing: 19px;
+    font-weight: 10;
+    
+}
+
+
+
+.text{
+    position: relative;
+    
+    display: block;
+    
+    font-weight: 400;
+    font-style: normal;
+   
+    
+    color: antiquewhite;
+    margin: auto;
+    /* border: 2px solid red; */
+    width: 800px;
+    text-align: center;
+    
+    margin: auto;
+    
+    font-size: 50px;
+    opacity: 0.1;
+    font-family: "Orbitron", sans-serif;
+   
+    font-weight: 10;
+    font-style: normal;
+
+
+}
+
+#quote1{
+
+
+    top: 200px;
+
+
+
+
+}
+#quote2{
+
+
+    top: 1000px;
+
+
+
+
+}
+
+
+#quote3{
+    top: 2000px;
+}
+
+
+
+
+#lastQuote{
+
+    opacity: 1;
+   
+    top: 3000px;
+  
+
+}
+
+
+
+
+
+
